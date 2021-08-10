@@ -49,7 +49,7 @@ END {
 
         state=newState[transition_n];
         tape[symbol_n]=newSymbol[transition_n];
-        if (move[symbol_n]=="L")
+        if (move[transition_n]=="L")
             symbol_n--;
         else
             symbol_n++;
@@ -58,6 +58,8 @@ END {
         print_tape(tape);
     }
 
+    print "Final Output:";
+    print "\n";
     print_tape(tape);
     print "Done!";
     print "\n";
